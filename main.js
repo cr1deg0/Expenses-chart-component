@@ -53,7 +53,8 @@ function renderChart(data) {
         datasets: [{
             backgroundColor: 'hsl(10, 79%, 65%)',
             barThickness: (context) => {        
-                                const fontSize = context.chart.width < 300 
+                                console.log(context.chart.width);
+                                const fontSize = context.chart.width < 345 
                                     ? '28'
                                     : '45';
                                 return fontSize;
@@ -83,7 +84,7 @@ function renderChart(data) {
                     caretPadding: 8,
                     bodyFont: {
                         size: (context) => {
-                            const fontSize = context.chart.width < 300 
+                            const fontSize = context.chart.width < 345 
                                 ? '11'
                                 : '16';
                             return fontSize;
@@ -115,7 +116,7 @@ function renderChart(data) {
                     ticks: {
                         font: {
                             size: (context) => {
-                                const fontSize = context.chart.width < 300 
+                                const fontSize = context.chart.width < 345 
                                     ? '11'
                                     : '16';
                                 return fontSize;

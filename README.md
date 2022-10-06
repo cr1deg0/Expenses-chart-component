@@ -13,8 +13,6 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-
-
 ## Overview
 
 ### The challenge
@@ -29,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution](https://your-solution-url.com)
+- [Live Site](https://cr1deg0.github.io/Expenses-chart-component/)
 
 ## My process
 
@@ -59,6 +57,7 @@ Not to forget the very important need to make the canvas element accessible. I'v
 
 - [Chart.js documentation](https://www.chartjs.org/docs/latest/)
 - [Chart.js tutorials](https://www.youtube.com/c/ChartJS-tutorials) 
+- [Accessible <canvas> article by PaulJAdam](https://pauljadam.com/demos/canvas.html)
 
 
 ## Author
