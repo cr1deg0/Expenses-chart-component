@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/expenses-chart-component-with-chartjs-SXx591WUtM)
 - [Live Site](https://cr1deg0.github.io/Expenses-chart-component/)
 
 ## My process
