@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body class="flex">
+  <div class="card">
+    <header class="bg-primary-500 round flex">
+      <div>
+        <h1 class="neutral-400 fs-500 fw-400">My balance</h1>
+        <span id="balance" class="neutral-400 fs-600 fw-700 ls-1">$921.48</span>
+      </div>
+      <svg width="60" height="38" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg" aria-label="Company logo"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
+    </header>
+    <main class="bg-neutral-400 round">
+      <section id="section-graph">
+        <h3 class="neutral-700 fs-600 fw-700">Spending - Last 7 days</h3>
+        <canvas id="weeklyChart" width="400" height="400" role="img"></canvas>
+      </section>
+      <section id="section-total" class="flex">
+        <div>
+          <h2 class="neutral-600 fs-500 fw-400">Total this month</h2>
+          <span id="total" class="neutral-700 fs-700 fw-700">$478.33</span>
+        </div>
+        <div>
+          <p class="neutral-700 fs-500 fw-700">+2.4%</p>
+          <p class="neutral-600 fs-500 fw-400">from last month</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

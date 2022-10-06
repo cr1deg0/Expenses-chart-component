@@ -1,0 +1,121 @@
+/***** Utilities *****/
+
+:root {
+
+    /* typography */
+
+    --fs-700: 1.85rem;
+    --fs-600: 1.5rem;
+    --fs-500: 0.871rem;
+
+    
+    /* colors */
+
+    --primary-500: hsl(10, 79%, 65%);
+    --primary-400: hsl(186, 34%, 60%);
+
+    --neutral-700: hsl(25, 47%, 15%);
+    --neutral-600: hsl(28, 10%, 53%);
+    --neutral-500: hsl(27, 66%, 92%);
+    --neutral-400: hsl(33, 100%, 98%);
+}
+
+@media (min-width: 500px) {
+    :root{
+        --fs-700: 3rem;
+        --fs-600: 2rem;
+        --fs-500: 1.125rem;  
+    }
+}
+
+/***** Custom properties *****/
+
+.fs-700 {font-size: var(--fs-700);}
+.fs-600 {font-size: var(--fs-600);}
+.fs-500 {font-size: var(--fs-500);}
+
+.fw-400 {font-weight: 400;}
+.fw-700 {font-weight: 700;}
+
+.ls-1 {letter-spacing: 1px;}
+
+.primary-500 {color: var(--primary-500);}
+.primary-400 {color: var(--primary-400);}
+
+.neutral-700 {color: var(--neutral-700);}
+.neutral-600 {color: var(--neutral-600);}
+.neutral-500 {color: var(--neutral-500);}
+.neutral-400 {color: var(--neutral-400);}
+
+.bg-neutral-400 {background-color: var(--neutral-400);}
+.bg-primary-500 {background-color: var(--primary-500);}
+
+.flex {
+    display: flex;
+}
+
+.round {
+    border-radius: 15px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--neutral-500);
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+
+.card {
+    width: 90%;
+}
+@media (min-width: 500px) {
+    .card {
+        width: 45%;
+    }
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 1em;
+    margin-bottom: 1em;
+}
+header h1 {
+    padding-bottom: 0.5em;
+}
+
+main {
+    padding: 2em;
+}
+
+#section-graph {
+    border-bottom: 2px solid var(--neutral-500);
+    padding-bottom: 1.5em;
+}
+#weeklyChart {
+    max-height: 200px;
+}
+#total {
+    padding-bottom: 0;
+}
+
+#section-total {
+    padding-top: 1.5em;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#section-total div:nth-child(2) {
+    text-align: right;
+}
+#section-total div p:nth-child(2) {
+    margin-bottom: 8px;
+}
